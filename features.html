@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メリット・デメリット | まるっとオフィス</title>
+    <style>
+        :root { --primary-blue: #0072CE; --primary-cyan: #00A3C4; --dark-blue: #0A2540; --bg-light: #F4F8FA; --text: #2D3748; --white: #FFFFFF; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: sans-serif; color: var(--text); background: var(--bg-light); line-height: 1.6; }
+        header { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; }
+        .header-in { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: bold; color: var(--dark-blue); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo-icon { width: 35px; height: 35px; background: linear-gradient(135deg, var(--primary-cyan), var(--primary-blue)); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { text-decoration: none; color: var(--text); font-weight: bold; font-size: 14px; }
+        nav a.active { color: var(--primary-blue); }
+        .btn-nav { background: var(--primary-blue); color: var(--white) !important; padding: 8px 16px; border-radius: 20px; }
+        .page-head { background: var(--dark-blue); color: var(--white); padding: 40px 20px; text-align: center; }
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .box { background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .box-pros { border-top: 6px solid #10B981; }
+        .box-cons { border-top: 6px solid #EF4444; }
+        .box h2 { font-size: 20px; margin-bottom: 20px; }
+        .box-pros h2 { color: #059669; }
+        .box-cons h2 { color: #DC2626; }
+        ul { list-style: none; }
+        li { margin-bottom: 15px; font-size: 14px; }
+        li strong { display: block; font-size: 15px; color: var(--dark-blue); }
+        footer { background: var(--dark-blue); color: #AAA; text-align: center; padding: 30px 20px; margin-top: 80px; font-size: 13px; }
+        @media(max-width:768px){ .container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-in">
+            <a href="index.html" class="logo"><div class="logo-icon">ま</div>まるっとオフィス</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="services.html">サービス内容</a></li>
+                    <li><a href="features.html" class="active">メリット・デメリット</a></li>
+                    <li><a href="contact.html" class="btn-nav">無料相談</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-head">
+        <h1>サポートを受ける上での比較</h1>
+        <p>申込み前に知っておきたいメリット・注意点（各5選）</p>
+    </div>
+
+    <div class="container">
+        <div class="box box-pros">
+            <h2>👍 5つのメリット</h2>
+            <ul>
+                <li><strong>1. 得意な「本業」に集中できる</strong>面倒な書類作りを気にせず練習やメインのお仕事に打ち込めます。</li>
+                <li><strong>2. ミスの心配がなくなって安心</strong>書類の書き忘れや計算ミスをプロが未然に防ぎます。</li>
+                <li><strong>3. ぐっすり休めて元気になれる</strong>夜遅くまでの作業がなくなり、心も体もしっかり休ませることができます。</li>
+                <li><strong>4. 1人雇うより費用を抑えられる</strong>必要な分だけ頼めるため、社員を直接雇うよりも無駄がありません。</li>
+                <li><strong>5. プロの良いアドバイスがもらえる</strong>「もっと節約できる方法」など役立つ知識を教えてもらえます。</li>
+            </ul>
+        </div>
+        <div class="box box-cons">
+            <h2>⚠️ 5つの注意点（デメリット）</h2>
+            <ul>
+                <li><strong>1. 月額の費用が発生する</strong>自分でやれば無料ですが、プロに頼むとお金がかかります。</li>
+                <li><strong>2. 最初にやり方を説明する手間がある</strong>自分のやり方を伝えるために最初は少々やり取りが必要です。</li>
+                <li><strong>3. 大切な情報を預ける必要がある</strong>銀行口座情報などを渡すため信頼関係が大切になります。</li>
+                <li><strong>4. 自分で事務をやらないので詳しくならない</strong>完全にお任せにすると書類作りの技術が身につきにくいです。</li>
+                <li><strong>5. お願いしてから完了まで少し時間がかかる</strong>依頼から完成までにやり取りが発生するため即時対応が難しい場合があります。</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 まるっとオフィス All Rights Reserved.</footer>
+</body>
+</html>
